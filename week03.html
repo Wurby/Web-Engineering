@@ -2,87 +2,69 @@
 <html>
   <head>
     <title>Home -- Joshua Pearson</title>
+    <link rel="stylesheet" href="css/week03style.css" />
   </head>
 
   <body>
-    <header>
-      <ul
-        style="
-        list-style-type: none;  
-        position: relative;
-        padding: 20px; 
-        color: #333"
-      >
-        <li style="font-family: Arial, Helvetica, sans-serif; float: left;">
-          <a href="index.html">
-            Home -- CS213 Assignments
-          </a>
-        </li>
-        <li
-          style="font-family: Cambria, Times, 'Times New Roman', serif; float: left; padding-left: 16px"
-        >
-          <a href="https://www.linkedin.com/in/joshua-keith-pearson-781b94a7/">
-            Linked In Profile
-          </a>
-        </li>
-        <!-- the requirements did say 'a little picture' of yourself. Tiling background image was just for fun. -->
-        <li style="float: right;">
-          <img
-            src="me.jpg"
-            alt="a picure of me"
-            style="width: 30px; height:
-          30px; padding: 20px; background-image: url('me.jpg'); background-size: 20px; border-radius:
-          37%"
-          />
-        </li>
-      </ul>
-    </header>
-
-    <h1>This is a home page for Joshua Keith Pearson.</h1>
-    <p>
-      My work can be found
-      <a href="https://github.com/wurby">on my github</a>. Thank you for coming
-      here to visit! I am from Lehi, UT. I am studying Software Engineering, and
-      I <em>currently</em> am working as a QA engineer for an
-      <strong>event automation company</strong>!
-    </p>
-    <blockquote>
-      "To compel a man to furnish funds for the propagation of ideas he
-      disbelieves and abhors is sinful and tyrannical."
-      <em>-Thomas Jefferson</em>
-    </blockquote>
-    <table style="width:100%; border-spacing: 5px">
-      <tr>
-        <th style="border: 1px solid #333">Course Name</th>
-        <th style="border: 1px solid #333">Course Description</th>
-        <th style="border: 1px solid #333">Section Number</th>
-        <th style="border: 1px solid #333">Class Time</th>
-        <th style="border: 1px solid #333">Class Location</th>
-      </tr>
-      <tr>
-        <td>CS213</td>
-        <td>
+    <div class="grid-wrapper">
+      <header class="header-grid-wrapper header-span-page">
+        <p class="header-1"><a href="index.html">Home</a></p>
+        <p><a href="https://github.com/wurby">Github</a></p>
+        <p>
+          <a href="https://www.linkedin.com/in/joshua-keith-pearson-781b94a7/"
+            >LinkedIn</a
+          >
+        </p>
+      </header>
+      <!-- Intro -->
+      <h1 class="full-col">
+        This is the new and improved home page for Joshua Keith Pearson.
+      </h1>
+      <p class="left-col">
+        Thank you for coming here to visit! I am from Lehi, UT. I am studying
+        Software Engineering, and I <em>currently</em> am working as a QA
+        engineer for an <strong>event automation company</strong>!
+      </p>
+      <blockquote class="right-two-col">
+        "To compel a man to furnish funds for the propagation of ideas he
+        disbelieves and abhors is sinful and tyrannical."
+        <em>Thomas Jefferson</em>
+      </blockquote>
+      <div class="subgrid-wrapper right-two-col">
+        <!-- row 1 -->
+        <h1 class="sub-left-col">Name</h1>
+        <h1 class="sub-center-col">Description</h1>
+        <h1 class="sub-right-col">Section</h1>
+        <!-- row 2 -->
+        <h2 class="sub-left-col">Web Engineering</h2>
+        <p class="sub-center-col">
           Internet and web basics, web fundamentals, web browsers, web servers,
           and web terminology. This course teaches the concepts behind the
           fundamental tools used for building client-side web applications. It
           emphasizes client side programming standards and programming tools
           used to create dynamic web applications.
-        </td>
-        <td>5</td>
-        <td>Any</td>
-        <td>Online</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #333">CS235</td>
-        <td style="border: 1px solid #333">
+        </p>
+        <h2 class="sub-right-col">CS213</h2>
+        <!-- row 3 -->
+        <h2 class="sub-left-col">Data Structures</h2>
+        <p class="sub-center-col">
           Builds on the foundation of CS 124 and CS 165 to introduce the
           fundamental concepts of data structures and the algorithms that
           proceed from them.
-        </td>
-        <td style="border: 1px solid #333">5</td>
-        <td style="border: 1px solid #333">Any</td>
-        <td style="border: 1px solid #333">Online</td>
-      </tr>
-    </table>
+        </p>
+        <h2 class="sub-right-col">CS235</h2>
+      </div>
+
+      <footer class="full-col align-end">
+        <p class="header-text text-small">Site map</p>
+        <div class="full-col">
+          <p>
+            <a href="index.html">Home</a> <a href="week02.html">week 2</a>
+            <a href="week03.html">Here</a> <a href="week04.html">week 4</a>
+            <a href="week05.html">week 5</a> <a href="week06.html">week 6</a>
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

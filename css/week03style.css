@@ -1,0 +1,138 @@
+/* STYLE */
+/* BACKGROUND */
+header {
+  background-color: #138;
+}
+
+/* TEXT */
+.header-text {
+  text-align: center;
+  font-weight: bold;
+}
+[href] {
+  text-decoration: none;
+  color: #999;
+}
+
+.text-big,
+h1 {
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  color: #555;
+  text-align: center;
+}
+
+.text-medium,
+h2 {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: #555;
+  text-align: center;
+}
+
+.text-normal,
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+  text-align: justify;
+  margin: 0;
+}
+
+.text-small,
+footer {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+/* STYLE END */
+
+/* GRID */
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, auto);
+  grid-gap: 10px;
+}
+
+.full-col {
+  grid-column: 2 / span 11;
+}
+
+.left-two-col {
+  grid-column: 2 / span 5;
+}
+
+.right-two-col {
+  grid-column: 6 / span 5;
+}
+
+.left-col {
+  grid-column: 2 / span 3;
+}
+
+.center-col {
+  grid-column: 5 / span 3;
+}
+
+.right-col {
+  grid-column: 8 / span 3;
+}
+
+.align-end {
+  align-content: end;
+}
+
+/* SUB-GRID */
+
+.subgrid-wrapper {
+  display: inline-grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+}
+
+.sub-full-col {
+  grid-column: 2 / 20;
+  align-self: center;
+  border: #444 solid 1px;
+  height: 100%;
+}
+
+.sub-left-col {
+  grid-column: 2 / 6;
+  align-self: center;
+  border: #888 solid 1px;
+  height: 100%;
+}
+
+.sub-center-col {
+  grid-column: 6 / 16;
+  align-self: center;
+  border: #888 solid 1px;
+  height: 100%;
+}
+
+.sub-right-col {
+  grid-column: 16 / 20;
+  align-self: center;
+  border: #888 solid 1px;
+  height: 100%;
+}
+
+/* HEADER GRID */
+
+.header-grid-wrapper {
+  display: inline-grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.header-span-page {
+  grid-column: 1 / span 12;
+}
+
+.header-1 {
+  grid-column: 2 / span 1;
+}
