@@ -7,8 +7,14 @@
 
   <body>
     <div class="grid-wrapper">
-      <header class="header-grid-wrapper header-span-page">
-        <p class="header-1"><a href="index.html">Home</a></p>
+      <header class="header-grid-wrapper header-span-page row-1">
+        <img
+          width="50em"
+          height="50em"
+          src="me.jpg"
+          class="header-1 rounded-edges"
+        />
+        <p><a href="index.html" id="top">Home</a></p>
         <p><a href="https://github.com/wurby">Github</a></p>
         <p>
           <a href="https://www.linkedin.com/in/joshua-keith-pearson-781b94a7/"
@@ -16,21 +22,43 @@
           >
         </p>
       </header>
+
       <!-- Intro -->
-      <h1 class="full-col">
+
+      <h1 class="full-col row-2">
         This is the new and improved home page for Joshua Keith Pearson.
       </h1>
-      <p class="left-col">
+      <p class="left-col row-3">
         Thank you for coming here to visit! I am from Lehi, UT. I am studying
         Software Engineering, and I <em>currently</em> am working as a QA
         engineer for an <strong>event automation company</strong>!
       </p>
-      <blockquote class="right-two-col">
+      <blockquote class="right-two-col row-3">
         "To compel a man to furnish funds for the propagation of ideas he
         disbelieves and abhors is sinful and tyrannical."
         <em>Thomas Jefferson</em>
       </blockquote>
-      <div class="subgrid-wrapper right-two-col">
+
+      <ul class="right-edge-col row-3">
+        <li><a href="#top">Go to top </a></li>
+        <li><a href="#bottom">Go to bottom</a></li>
+      </ul>
+
+      <a href="https://www.freecodecamp.org/wurby" class="left-col row-4"
+        ><img
+          src="https://s3.us-east-2.amazonaws.com/wurbys3/Screen+Shot+2019-05-17+at+1.13.24+PM.png"
+          width="300em"
+          height="200em"
+      /></a>
+      <p class="center-col row-4">
+        Feel free to look around and bask in the css grid. Isn't it wonderful?
+        Click on it to go to my freecodecamp profile where some of my past work
+        is.
+      </p>
+
+      <!-- Table -->
+
+      <div class="subgrid-wrapper right-two-col row-4-5">
         <!-- row 1 -->
         <h1 class="sub-left-col">Name</h1>
         <h1 class="sub-center-col">Description</h1>
@@ -55,14 +83,74 @@
         <h2 class="sub-right-col">CS235</h2>
       </div>
 
-      <footer class="full-col align-end">
-        <p class="header-text text-small">Site map</p>
-        <div class="full-col">
-          <p>
-            <a href="index.html">Home</a> <a href="week02.html">week 2</a>
-            <a href="week03.html">Here</a> <a href="week04.html">week 4</a>
-            <a href="week05.html">week 5</a> <a href="week06.html">week 6</a>
-          </p>
+      <a href="https://codepen.io/wurby/" class="left-col row-5">
+        <img
+          src="https://s3.us-east-2.amazonaws.com/wurbys3/Screen+Shot+2019-05-16+at+2.40.44+PM.png"
+          width="300em"
+          height="200em"
+      /></a>
+
+      <p class="center-col row-5">
+        This is a link to some previous work of mine over on
+        <a href="https://codepen.io/wurby/">Codepen.io</a>. Check it out, if
+        you'd like.
+      </p>
+
+      <form class="full-col">
+        <fieldset>
+          <legend>Send me an email!</legend>
+
+          Your Email:
+          <input type="text" name="firstname" />
+          Your Message
+          <textarea name="message"> </textarea> <br />
+          <span class="form-center-col">
+            <input type="radio" name="opinion" value="like" checked /> I like it
+
+            <input type="radio" name="opinion" value="dislike" /> I dislike it
+
+            <input type="radio" name="opinion" value="other" /> Other
+          </span>
+
+            <input type="checkbox" name="otherOpinion" value="Looks good" />
+            Looks good
+            <input type="checkbox" name="otherOpinion" value="Bad" /> Bad design
+
+            <input type="checkbox" name="otherOpinion" value="Needs work" />
+            Needs work
+          </span>
+          <input type="submit" />
+          <input type="reset" />
+        </fieldset>
+      </form>
+
+      <footer class="header-grid-wrapper header-span-page">
+        <p class="header-text text-small header-items-span" id="bottom">
+          Site map
+        </p>
+        <div class="footer-column-1">
+          <ul>
+            <li  class=""> <a href="week02.html">Week 02</a></li>
+            <li  class=""> <a href="week03.html">You Are Here</a></li>
+            <li  class=""> <a href="week4.html" >Week 04</a></li>
+            <li  class=""> <a href="week5.html" >Week 05</a></li>
+          </ul>
+        </div>
+        <div class="footer-column-2">
+          <ul>
+            <li class=""> <a href="week06.html">Week 06</a></li>
+            <li class=""> <a href="week07.html">Week 07</a></li>
+            <li class=""> <a href="week08.html">Week 08</a></li>
+            <li class=""> <a href="week09.html">Week 09</a></li>
+          </ul>
+        </div>
+        <div class="footer-column-3">
+          <ul>
+            <li class=""><a href="week10.html"> Week 10</a></li>
+            <li class=""><a href="week11.html"> Week 11</a></li>
+            <li class=""><a href="week12.html"> Week 12</a></li>
+            <li class=""><a href="week13.html"> Week 13</a></li>
+          </ul>
         </div>
       </footer>
     </div>
