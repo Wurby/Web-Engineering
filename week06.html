@@ -1,10 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Assigment06</title>
+    <title>Assignment 06</title>
+    <link rel="stylesheet" href="css/week06style.css" />
+    <script type="text/javascript" src="js/week06.js"></script>
   </head>
 
   <body>
-    <p>This will be assignement 6</p>
+    <header>
+      <p><a href="index.html">Back to Assignments</a></p>
+    </header>
+
+    <form
+      name="shoppingForm"
+      onreset="focusFirstName()"
+      onsubmit="submitForm()"
+      onload="focusFirstName()"
+    >
+      <div>
+        First Name
+        <input type="text" name="firstName" id="firstName" />
+        Last Name
+        <input type="text" name="lastName" />
+        Phone Number
+        <input type="text" name="phoneNumber" />
+        <br />
+        Address
+        <textarea
+          rows="2"
+          name="address"
+          placeholder="street address, city, state, and zip"
+        ></textarea>
+      </div>
+      <br />
+
+      <table>
+        <tr>
+          <th>Select</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="item_0" /></td>
+          <td>Milk</td>
+          <td>$6.95</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="item_1" /></td>
+          <td>Eggs</td>
+          <td>$1.95</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="item_2" /></td>
+          <td>Yogurt</td>
+          <td>$3.95</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="item_3" /></td>
+          <td>Pizza</td>
+          <td>$4.95</td>
+        </tr>
+      </table>
+
+      <p>
+        <strong>Total: </strong>$
+        <output name="total">0.00</output>
+      </p>
+      <p>
+        Payment Type:
+        <br />
+        Credit Card Number:
+        <input
+          type="text"
+          id="card_field"
+          name="credit_card"
+          onchange="validateCardNumber(this.value)"
+        />
+        <a id="card_warning" style="display: none; color: red;"
+          >Invalid Card number!</a
+        >
+        <br />
+        Expiration Date:
+
+        <input type="month" name="exp_date" min="2019-06" value="2021-06" />
+        <br />
+        <input type="radio" name="card" value="card_0" /> Visa <br />
+        <input type="radio" name="card" value="card_1" /> MasterCard
+        <br />
+        <input type="radio" name="card" value="card_2" /> American Express
+      </p>
+
+      <input type="submit" />
+      <input type="reset" />
+    </form>
   </body>
 </html>
